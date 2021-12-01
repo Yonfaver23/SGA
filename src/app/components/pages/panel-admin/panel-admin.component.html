@@ -19,20 +19,33 @@
         <div class="formulario">
           <div class="input-forum">
             <!-- <select [(ngModel)]="estudiante.unaPersona.unTipoDocumento.idTipoDocumento"   formControlName="tipoDocumento" id="tipoDocumento"> -->
-              <option disabled selected value="">
-                Seleccione tipo documento
-              </option>
-              <option 
+            <option disabled selected value="1">
+              Seleccione tipo documento
+            </option>
+            <!-- <option 
                 *ngFor="let tipoDocumentos of tipoDocumentos"
                 [value]="tipoDocumentos.idTipoDocumento"
               >
                 {{ tipoDocumentos.nombre }}
-              </option>
+              </option> -->
             <!-- </select> -->
-            <input [(ngModel)]="estudiante.unaPersona.numeroDocumento" placeholder="Numero de documento" />
-            <input [(ngModel)]="estudiante.unaPersona.nombre" placeholder="Nombre completo" />
-            <input [(ngModel)]="estudiante.unaPersona.apellido"placeholder="Apellido completo" />
-            <select [(ngModel)]="estudiante.grado" name="tipoDocumnto" class="tipoDocumento">
+            <input
+              [(ngModel)]="estudiante.unaPersona.numeroDocumento"
+              placeholder="Numero de documento"
+            />
+            <input
+              [(ngModel)]="estudiante.unaPersona.nombre"
+              placeholder="Nombre completo"
+            />
+            <input
+              [(ngModel)]="estudiante.unaPersona.apellido"
+              placeholder="Apellido completo"
+            />
+            <select
+              [(ngModel)]="estudiante.grado"
+              name="tipoDocumnto"
+              class="tipoDocumento"
+            >
               <option value="">Grado</option>
               <option value="dog">Primero</option>
               <option value="cat">Segundo</option>
@@ -40,12 +53,30 @@
               <option value="cat">Cuarto</option>
             </select>
             <input [(ngModel)]="estudiante.director" placeholder="Director" />
-            <input [(ngModel)]="estudiante.unaPersona.barrio"placeholder="Barrio" />
-            <input [(ngModel)]="estudiante.unaPersona.fechaNacimiento" type="date" placeholder="Fecha nacimiento" required />
-            <input [(ngModel)]="estudiante.nombreAcudiente"placeholder="Nombre acudiente" />
-            <input  placeholder="Parentesco" />
-            <input [(ngModel)]="estudiante.unaPersona.telefono" placeholder="Telefono/Celular" />
-            <input type="date" placeholder="Fecha de registro" required />
+            <input
+              [(ngModel)]="estudiante.unaPersona.barrio"
+              placeholder="Barrio"
+            />
+
+            <input
+              [(ngModel)]="estudiante.unaPersona.fechaNacimiento"
+              type="date"
+              placeholder="Fecha nacimiento"
+              required
+            />
+            <input
+              [(ngModel)]="estudiante.unaPersona.direccion"
+              placeholder="Direccion"
+            />
+            <input
+              [(ngModel)]="estudiante.nombreAcudiente"
+              placeholder="Direccion"
+            />
+            <input placeholder="Parentesco" />
+            <input
+              [(ngModel)]="estudiante.unaPersona.telefono"
+              placeholder="Telefono/Celular"
+            />
           </div>
           <div class="option">
             <div class="huella">
@@ -59,7 +90,9 @@
             </div>
             <div>
               <button class="btn limpiar">Limpiar</button
-              ><button (click)="save(estudiante)" class="btn guardar">Guardar</button>
+              ><button (click)="save(estudiante)" class="btn guardar">
+                Guardar
+              </button>
             </div>
           </div>
           <div class="table">
