@@ -1,0 +1,88 @@
+<app-header-admin></app-header-admin>
+<div class="flex">
+  <div>
+    <app-nav-bar-admin></app-nav-bar-admin>
+  </div>
+  <div class="main-admin">
+    <div class="panel">
+      <div class="form-main">
+        <div>
+          <h3>
+            Beneficiario
+
+            <p  class="rute"><span class="material-icons"> home </span>Inicio/ Estudiantes/ Beneficiario</p>
+          </h3>
+        </div>
+        <div class="formulario">
+          <div class="colum1 colum">
+            <div class="input">
+              <a style="position: inherit; top: 5px"> Documento* </a>
+              <select id="sel_tipoDocumento" name="" class="">
+                <option value="">--TIPO DOCUMENTO--</option>
+                <option value="CEDULA">CEDULA</option>
+                <option value="TARJETADEIDENTIDAD">TARJETA DE IDENTIDAD</option>
+              </select>
+            </div>
+            <div class="input">
+              <a>Número documeto*</a>
+              <input
+                type="text" id="txt_numeroDocumento"
+                placeholder="# DOCUMENTO*"
+              />
+            </div>
+            <div class="input">
+                <a style="position: inherit; top: 5px"> Tipo de beneficio* </a>
+                <select id="sel_tipoBeneficio" name="" class="">
+                  <option value="">--SELECCIONE--</option>
+               </select>
+              </div>
+
+           
+          </div>
+          <div class="colum2 colum ">
+            <div class="input">
+              <a>Nombre*</a>
+              <input placeholder="NOMBRE COMPLETO*"type="text"  id="txt_nombreCompleto">
+            </div>
+            <div class="input">
+                <a>Apellido*</a>
+              <input
+                type="txt_apellidoCompleto"
+                placeholder="APELLIDO COMPLETO*"
+              />
+            </div>
+            <div class="input">
+                <a>Horario beneficio*</a>
+                <select id="sel_educacion" name="" class="">
+                  <option value="">--SELECCIONE--</option>
+                  <option value="AM">AM</option>
+                  <option value="PM">PM</option>
+                  <option value="ALMUERZO">ALMUERZO</option>
+                </select>
+            </div>
+            
+          </div>
+          <div class="colum3 colum">
+            <div class="input">
+              <a>Acudiente*</a
+              ><input type="text" placeholder="NOMBRE COMPLETO*" />
+            </div>
+            <div class="input">
+              <a>Fecha registro*</a>
+              <input type="date">
+            </div>
+           
+           
+
+          <div>
+            <div class="input">
+              <button  class="btn guardar">
+                Guardar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

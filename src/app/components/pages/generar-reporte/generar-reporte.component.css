@@ -1,0 +1,58 @@
+@import url("../../../../styles.css");
+.flex {
+  display: flex;
+}
+.form-main {
+  /* border: 1px solid red; */
+  /* min-height: 50%; */
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid red; */
+  justify-content: space-between;
+}
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid rgb(169, 169, 169);
+}
+.material-icons {
+  padding: 0;
+  margin: 0;
+}
+.header-main p {
+  display: flex;
+  /* border: 1px solid gray; */
+  justify-content: center;
+  align-items: center;
+}
+.header-main h3 {
+  padding: 1rem;
+  font: var(--font2);
+  display: flex;
+  justify-content: space-between;
+}
+.header-main p {
+  font: var(--fontRute);
+}
+.img-icon img {
+  width: 7rem;
+}
+.img-icon img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.img-icon {
+  display: flex;
+  /* border: 1px solid blue; */
+  justify-content: space-around;
+}
+.table-student th {
+  background-color: blue;
+  color: white;
+}
+tbody tr:nth-child(even) {
+  background-color: rgb(130, 190, 255);
+}

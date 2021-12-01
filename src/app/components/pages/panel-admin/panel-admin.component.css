@@ -1,0 +1,134 @@
+@import url("../../../../styles.css");
+.main-admin {
+  display: flex;
+  flex-direction: row;
+}
+.flex {
+  display: flex;
+}
+.form-main {
+  width: 100%;
+  height: 60px;
+  border-bottom: 3px solid rgb(169, 169, 169);
+}
+
+h3 {
+  padding: 1rem;
+  font: var(--font2);
+  display: flex;
+  justify-content: space-between;
+}
+.rute {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+}
+h3 p {
+  font: var(--fontRute);
+}
+.formulario {
+  padding: 1rem;
+}
+.input-forum {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+input[type="date"]::before {
+  color: #999999;
+  content: attr(placeholder);
+}
+input[type="date"] {
+  color: #ffffff;
+}
+input[type="date"]:focus,
+input[type="date"]:valid {
+  color: #666666;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  content: "" !important;
+}
+.option {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  align-items: center;
+}
+textarea {
+  height: 100%;
+}
+.huella {
+  display: flex;
+
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.btn {
+  border: 1px solid red;
+  font: var(--fontButton);
+  color: white;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn.limpiar {
+  border: 2px solid rgb(135, 135, 255);
+  background-color: rgb(62, 100, 255);
+}
+.btn.guardar {
+  border: 2px solid rgb(46, 214, 46);
+  background-color: rgb(0, 143, 0);
+}
+
+input,
+select {
+  /* border: 1px solid blue; */
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.table {
+  margin-top: 3rem;
+
+  display: flex;
+  flex-direction: column;
+}
+.table-student th {
+  background-color: blue;
+  color: white;
+}
+tbody tr:nth-child(even) {
+  background-color: rgb(130, 190, 255);
+}
+.opciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-icon img {
+  width: 4rem;
+}
+.img-icon img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.btn.registrar {
+  display: flex;
+  border: 2px solid rgb(46, 214, 46);
+  background-color: rgb(0, 143, 0);
+  text-align: center;
+  gap: 5px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}

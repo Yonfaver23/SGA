@@ -1,0 +1,141 @@
+<app-header-admin></app-header-admin>
+<div class="flex">
+  <div>
+    <app-nav-bar-admin></app-nav-bar-admin>
+  </div>
+  <div class="main-admin">
+    <div class="panel">
+      <div class="form-main">
+        <div>
+          <h3>
+            Información general
+
+            <p class="rute"><span class="material-icons"> home </span>inicio</p>
+          </h3>
+        </div>
+        <div class="formulario">
+          <div class="colum1 colum">
+            <div class="input">
+              <a style="position: inherit; top: 5px"> Sede* </a>
+              <select id="sel_sede" name="" class="">
+                <option value="">--COLEGIO/ESCUELA--</option>
+                <option value="COLEGIO">COLEGIO</option>
+                <option value="ESCUELA">ESCUELA</option>
+              </select>
+            </div>
+            <div class="input">
+              <a>Nombre*</a>
+              <input
+                type="txt_nombreInstititucion"
+                placeholder="INSTITUCIÓN*"
+              />
+            </div>
+            <div class="input">
+              <input
+                id="txt_fechaIngreso"
+                type="date"
+                placeholder="FECHA INGRESO*"
+                required
+              />
+            </div>
+
+            <div class="input">
+              <a>Cargo*</a
+              ><input
+                id="txt_cargoRectoria"
+                type="text"
+                placeholder="RECTORÍA*"
+              />
+            </div>
+            <div class="input">
+              <input type="txt_nombreRector" placeholder="NOMBRES COMPLETOS*" />
+            </div>
+            <div class="input">
+              <input
+                type="text"
+                id="txt_rectorApellidos"
+                placeholder="APELLIDOS COMPLETOS*"
+              />
+            </div>
+          </div>
+          <div class="colum2 colum ">
+            <div class="input">
+              <a>Coordinación*</a>
+              <select id="sel_cordinacion" name="" class="">
+                <option value="">-------TIPO-------</option>
+                <option value="ACADEMICO">ACADEMICO</option>
+                <option value="CONVIVENCIA">CONVIVENCIA</option>
+                <option value="DISCIPLINA">DISPCIPLINA</option>
+              </select>
+            </div>
+            <div class="input">
+              <input
+                type="txt_nombreCoordinar"
+                placeholder="NOMBRES COMPLETOS*"
+              />
+            </div>
+            <div class="input">
+              <input
+                type="text"
+                id="txt_coordinadorApellidos"
+                placeholder="APELLIDOS COMPLETOS*"
+              />
+            </div>
+            <div class="input">
+              <a>Horarios*</a
+              ><input id="txt_horario" placeholder="HORARIOS DE CLASE*" />
+            </div>
+            <div class="input">
+              <a>Nivel de educación*</a>
+              <select id="sel_educacion" name="" class="">
+                <option value="">PRIMARIA/SECUNDARIA</option>
+                <option value="PRIMARIA">PRIMARIA</option>
+                <option value="SECUNDARIA">SECUNDARIA</option>
+              </select>
+            </div>
+            <div class="input">
+              <a>Jornada*</a>
+              <select id="sel_jornada" name="" class="">
+                <option value="">--MAÑANA/TARDE--</option>
+                <option value="ACADEMICO">MAÑANA</option>
+                <option value="CONVIVENCIA">TARDE</option>
+              </select>
+            </div>
+          </div>
+          <div class="colum3 colum">
+            <div class="input">
+              <a>Capacidad de salón</a
+              ><input type="text" placeholder="# DE ESTUDIANTES*" />
+            </div>
+            <div class="input">
+              <a>Pais*</a>
+              <select id="sel_pais" name="" class="">
+                <option value="">--SELECCIONE EL PAIS--</option>
+              </select>
+            </div>
+            <div class="input">
+              <a>Municipio*</a>
+              <select id="sel_municipio" name="" class="">
+                <option value="">SELECCIONE MUNICIPIO</option>
+              </select>
+            </div>
+            <div class="input">
+              <a>Departamento*</a>
+              <select class="sel_pais" name="" class="">
+                <option value="">--SELECCIONE EL PAIS--</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <div class="input">
+              <button  class="btn guardar">
+                Guardar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

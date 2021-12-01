@@ -1,0 +1,72 @@
+@import url("../../../../styles.css");
+.icons {
+  /* background-color: blue; */
+  color: aliceblue;
+  width: 40px;
+  height: 40px;
+}
+form {
+  /* border: 1px solid blue; */
+  font-size: 25px;
+  max-width: 40%;
+  /* display: flex; */
+  margin: auto;
+}
+.icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-top: 90px;
+  margin-left: -100px;
+}
+.icons {
+  width: 100px;
+  height: 100px;
+}
+.icons-admin {
+  display: flex;
+}
+.div-admin {
+  display: flex;
+  flex-direction: column;
+}
+.div-password {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  padding: 15px;
+  font-size: 20px;
+}
+.div-form {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 2rem;
+}
+.btn-save {
+  background-color: rgb(55, 197, 55);
+  font: var(--fontButton);
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid rgb(3, 201, 3);
+  color: white;
+  cursor: pointer;
+}
+.btn-save:hover {
+  opacity: 0.8;
+}
+.div-option {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.div-option a {
+  color: rgb(0, 179, 220);
+  cursor: pointer;
+}
+.forum-icon {
+  margin-top: 10rem;
+}

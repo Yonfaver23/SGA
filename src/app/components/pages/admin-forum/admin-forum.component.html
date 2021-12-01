@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="forum-icon">
+  <form>
+    <div class="icon">
+      <span>
+        <img src="../../../../assets/icon/user.svg" class="icons" />
+      </span>
+    </div>
+    <div>
+      <div class="div-form">
+        <label>Administrador</label>
+        <input
+          placeholder="Usuario"
+          name="user"
+          [(ngModel)]="usuario.userName"
+        />
+
+        <label>Contraseña</label>
+        <input
+          placeholder="*********"
+          name="user"
+          [(ngModel)]="usuario.userPassword"
+          type="password"
+        />
+
+        <div class="div-option">
+          <a> He olvidado mi contraseña </a>
+          <button class="btn-save" routerLink="/admin/panel">
+            Ingresar
+            <span class="material-icons" style="color: white">
+              done_outline
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,47 @@
+.header {
+  background-color: red;
+  margin: auto;
+  height: 70px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-header {
+  display: flex;
+}
+.date {
+  margin-right: 10px;
+  background-color: white;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  border: 3px solid rgb(107, 179, 255);
+  padding-left: 10px;
+}
+.icons {
+  /* background-color: blue; */
+  color: aliceblue;
+  width: 40px;
+  height: 40px;
+}
+.login-icon {
+  display: flex;
+  /* background-color: brown; */
+  gap: 10px;
+  margin-left: 90px;
+  justify-content: center;
+  align-items: center;
+}
+.date span {
+  border-left: 3px solid rgb(107, 179, 255);
+  padding-left: 5px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

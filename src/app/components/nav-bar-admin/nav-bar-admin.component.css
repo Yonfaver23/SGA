@@ -1,0 +1,153 @@
+@import url("../../../styles.css");
+.acordion-editado {
+  background-color: #ea1e63 !important;
+  color: white;
+  position: absolute;
+  width: 201px;
+  height: 38px;
+  z-index: 1;
+}
+b {
+  color: white;
+}
+
+.text-admin {
+  margin-top: 1px;
+}
+span {
+  color: white;
+}
+
+.div-estudiante {
+  background-color: #5cb2db;
+  height: 47px;
+}
+.icono-flecha {
+  margin-top: 9px;
+  color: #fff;
+}
+.texto-validar-estudiantes {
+  margin-top: 29px;
+}
+.acordion-body {
+  background-color: #5cb2db;
+  height: 53px;
+}
+.texto-crear-estudiante {
+  position: absolute;
+  margin-top: 12px;
+  color: white;
+}
+.b-crear-estudiante {
+  position: absolute;
+  color: white;
+  margin-top: 11px;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.nav > li {
+  float: left;
+}
+
+.nav li a {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+.nav li a:hover {
+  background-color: #434343;
+}
+
+li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+li:hover > ul {
+  display: block;
+}
+li ul li {
+  position: absolute;
+}
+li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+.icono-flecha-dos {
+  margin-top: 27px;
+  color: #fff;
+}
+.texto-validar-estudiantes-dos {
+  position: absolute;
+  margin-top: 29px;
+  left: 43px;
+  color: white;
+}
+.texto-validar-estudiantes-tres {
+  top: 27px;
+}
+.acordion-body-uno {
+  border-top-color: #5cb2db;
+  border-bottom-color: #5cb2db;
+  background-color: #5cb2db;
+  padding-bottom: 0px;
+  border-bottom-width: 0px;
+  position: relative;
+  top: 2px;
+}
+.acordion-item-editado {
+  border-top-color: #5cb2db;
+  border-bottom-color: #5cb2db;
+  background-color: #5cb2db;
+}
+.texto-home-uno {
+  position: absolute;
+  margin-top: 5px;
+  color: white;
+}
+.home-icon-uno {
+  margin-left: 15px;
+  color: white;
+}
+.menu-lateral-izquierdo {
+  float: left;
+  width: 100%;
+  height: 650px;
+  background-color: #5cb2db;
+}
+
+.acordion-editado-tres {
+  background-color: #ea1e63 !important;
+  color: white;
+  width: 201px;
+  height: 38px;
+  z-index: 1;
+  top: 32px;
+}
+.botton-acordeon {
+  top: 175px;
+}
+.acordion-h2 {
+  height: 13px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 900px) {
+  .menu-lateral-izquierdo{
+    float: left;
+    width: 100%;
+    height: 923px;
+    background-color: #5cb2db;
+    
+  }
+
+}

@@ -1,0 +1,160 @@
+@import url("../../../../styles.css");
+.main-admin {
+  display: flex;
+  flex-direction: row;
+}
+.flex {
+  display: flex;
+  width: 100%;
+}
+.form-main {
+  height: 60px;
+  border-bottom: 3px solid rgb(169, 169, 169);
+}
+
+h3 {
+  padding: 1rem;
+  font: var(--font2);
+  display: flex;
+  justify-content: space-between;
+}
+.rute {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+}
+.panel {
+  border: 1px solid blue;
+  min-width: 100%;
+}
+h3 p {
+  font: var(--fontRute);
+}
+.formulario {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: space-between;
+}
+.input-forum {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+input[type="date"]::before {
+  color: #999999;
+  content: attr(placeholder);
+}
+input[type="date"] {
+  color: #ffffff;
+}
+input[type="date"]:focus,
+input[type="date"]:valid {
+  color: #666666;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  content: "" !important;
+}
+
+.btn.guardar {
+  border: 2px solid rgb(46, 214, 46);
+  background-color: rgb(0, 143, 0);
+}
+
+input,
+select {
+  /* border: 1px solid blue; */
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.input {
+  /* border: 1px solid violet; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.colum {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+  gap: 1rem;
+}
+.rute{
+    
+    margin-left: 717px;
+}
+@media (min-width: 900px) and (max-width: 1300px){
+	.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: flex-start;
+  }
+  .rute{
+    margin-left: 100px !important;
+  }
+}
+  @media (max-width: 900px) {
+    .btn{
+      
+    top: 300px;
+    left: 150px;
+    margin-top: 154px;
+    POSITION: relative;
+    margin-left: 0px;
+    }
+    .menu-lateral-izquierdo{
+      float: left;
+      width: 100%;
+      height: 881px;
+      background-color: #5cb2db;
+    }
+    body{
+      width: 557px;
+      height: 881px;
+    }
+    .colum1{
+      display: flex;
+      flex-direction: column;
+      grid-gap: 1rem;
+      grid-gap: 1rem;
+      gap: 1rem;
+      margin-left: 63px;
+      right: -90px;
+    }
+    .colum3{
+      display: flex;
+      flex-direction: column;
+      grid-gap: 1rem;
+      grid-gap: 1rem;
+      gap: 1rem;
+      position: absolute;
+      top: 773px;
+      right: -90px;
+    }
+    .colum2{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    gap: 1rem;
+    position: absolute;
+    top: 484px;
+    right: -90px;
+    }
+    .rute{
+        margin-left: 100px !important;
+      }
+    .guardar{
+        position: absolute;
+        top: 0px;
+    }
+  
+}

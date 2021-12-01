@@ -1,0 +1,35 @@
+.icons {
+  width: 100px;
+  height: 100px;
+}
+.forum {
+  max-width: 50%;
+  margin: auto;
+  min-height: 90vh;
+
+  position: relative;
+}
+.form-div a {
+  text-decoration: none;
+}
+.form-div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  margin-top: 10rem;
+}
+.form-div div {
+  text-align: center;
+}
+h3 {
+  color: grey;
+}
+
+@media (max-width: 600px) {
+  .form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

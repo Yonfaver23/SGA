@@ -1,0 +1,172 @@
+<app-header-admin></app-header-admin>
+<div class="flex">
+  <div>
+    <app-nav-bar-admin></app-nav-bar-admin>
+  </div>
+  <div class="main-admin">
+    <div class="panel">
+      <div class="form-main">
+        <div>
+          <h3>
+            Crear Estudiante
+
+            <p class="rute">
+              <span class="material-icons"> home </span>inicio / administrador /
+              Crear estudiante
+            </p>
+          </h3>
+        </div>
+        <div class="formulario">
+          <div class="input-forum">
+            <select [(ngModel)]="estudiante.unaPersona.nombre"   formControlName="tipoDocumento" id="tipoDocumento">
+              <option disabled selected value="">
+                Seleccione tipo documento
+              </option>
+              <option 
+                *ngFor="let tipoDocumentos of tipoDocumentos"
+                [value]="tipoDocumentos.idTipoDocumento"
+              >
+                {{ tipoDocumentos.nombre }}
+              </option>
+            </select>
+            <input [(ngModel)]="estudiante.unaPersona.numeroDocumento" placeholder="Numero de documento" />
+            <input placeholder="Nombre completo" />
+            <input placeholder="Apellido completo" />
+            <select name="tipoDocumnto" class="tipoDocumento">
+              <option value="">Grado</option>
+              <option value="dog">Primero</option>
+              <option value="cat">Segundo</option>
+              <option value="dog">Tercero</option>
+              <option value="cat">Cuarto</option>
+            </select>
+            <input placeholder="Director" />
+            <input placeholder="Barrio" />
+            <input type="date" placeholder="Fecha nacimiento" required />
+            <input placeholder="Nombre acudiente" />
+            <input placeholder="Parentesco" />
+            <input placeholder="Telefono/Celular" />
+            <input type="date" placeholder="Fecha de registro" required />
+          </div>
+          <div class="option">
+            <div class="huella">
+              <textarea rows="6" cols="30"></textarea>
+              <button class="btn registrar">
+                Registrar ingreso
+                <span class="material-icons" style="color: white">
+                  done_outline
+                </span>
+              </button>
+            </div>
+            <div>
+              <button class="btn limpiar">Limpiar</button
+              ><button class="btn guardar">Guardar</button>
+            </div>
+          </div>
+          <div class="table">
+            <div class="opciones">
+              <h3>Listado</h3>
+              <div class="img-icon">
+                <img src="../../../../assets/icon/pdf.png" />
+                <img src="../../../../assets/icon/excel.png" />
+                <img src="../../../../assets/icon/text.png" />
+              </div>
+            </div>
+            <table class="table-student">
+              <tr>
+                <th>Nombre</th>
+                <th>Documento</th>
+                <th>Grado</th>
+                <th>Direccion</th>
+                <th>Acudiente</th>
+                <th>Parentesco</th>
+                <th>Celular</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>Sunny</td>
+
+                  <td>Mostly sunny</td>
+
+                  <td>Partly cloudy</td>
+                  <td>Sunny</td>
+                  <td>Sunny</td>
+
+                  <td>Mostly sunny</td>
+
+                  <td>Partly cloudy</td>
+                </tr>
+
+                <tr>
+                  <td>19°C</td>
+
+                  <td>17°C</td>
+
+                  <td>12°C</td>
+                  <td>Sunny</td>
+                  <td>Sunny</td>
+
+                  <td>Mostly sunny</td>
+
+                  <td>Partly cloudy</td>
+                </tr>
+
+                <tr>
+                  <td>E 13 km/h</td>
+
+                  <td>E 11 km/h</td>
+
+                  <td>S 16 km/h</td>
+                  <td>Sunny</td>
+                  <td>Sunny</td>
+
+                  <td>Mostly sunny</td>
+
+                  <td>Partly cloudy</td>
+                </tr>
+                <tr>
+                  <td>E 13 km/h</td>
+
+                  <td>E 11 km/h</td>
+
+                  <td>S 16 km/h</td>
+                  <td>Sunny</td>
+                  <td>Sunny</td>
+
+                  <td>Mostly sunny</td>
+
+                  <td>Partly cloudy</td>
+                </tr>
+                <tr>
+                  <td>E 13 km/h</td>
+
+                  <td>E 11 km/h</td>
+
+                  <td>S 16 km/h</td>
+                  <td>Sunny</td>
+                  <td>Sunny</td>
+
+                  <td>Mostly sunny</td>
+
+                  <td>Partly cloudy</td>
+                </tr>
+                <tr>
+                  <td>E 13 km/h</td>
+
+                  <td>E 11 km/h</td>
+
+                  <td>S 16 km/h</td>
+                  <td>Sunny</td>
+                  <td>Sunny</td>
+
+                  <td>Mostly sunny</td>
+
+                  <td>Partly cloudy</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
