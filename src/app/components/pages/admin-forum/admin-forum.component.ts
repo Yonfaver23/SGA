@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Users } from '../../models/users';
+import { Users } from 'src/app/modelo2/user'; 
 
 @Component({
   selector: 'app-admin-forum',

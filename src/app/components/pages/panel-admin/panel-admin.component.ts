@@ -61,15 +61,16 @@ export class PanelAdminComponent implements OnInit {
   estudiante: Estudiante = new Estudiante();
 
   save(estudiante: Estudiante) {
-    // console.log(this.estudiante);
-    this.estudianteService.saveEstudiantes(estudiante).subscribe(
-      (res) => {
-        console.log(res);
-      },
-      (err) => {
-        console.log(err);
-      }
-    );
+    alert(estudiante)
+    console.log(estudiante)
+    // this.estudianteService.saveEstudiantes(estudiante).subscribe(
+    //   (res) => {
+    //     console.log(res);
+    //   },
+    //   (err) => {
+    //     console.log(err);
+    //   }
+    // );
   }
 
   getTipoDocumento() {

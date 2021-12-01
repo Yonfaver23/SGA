@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Users } from '../../models/users';
-
 @Component({
   selector: 'app-student-forum',
   templateUrl: './student-forum.component.html',

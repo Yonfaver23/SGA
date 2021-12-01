@@ -1,6 +1,14 @@
-export class Persona {
+export class Estudiante {
+  idEstudiante: string;
+  grado: string;
+  director: string;
+  nombreAcudiente: string;
+  unaPersona: {
     idPersona: number;
-    unTipoDocumento: TipoDocumento;
+    unTipoDocumento: {
+      idTipoDocumento: number;
+      nombre: string;
+    };
     numeroDocumento: string;
     nombre: string;
     apellido: string;
@@ -11,18 +19,5 @@ export class Persona {
     fechaCreacion: string;
     fechaModificacion?: string;
     estado: string;
-  
-  }
-  
-  export class TipoDocumento {
-    idTipoDocumento: number;
-    nombre: string;
-  }
-  export class Estudiante{
-    idEstudiante: string;
-    grado: string;
-    director: string;
-    nombreAcudiente: string;
-    unaPersona: Persona;
-  }
-  
+  };
+}

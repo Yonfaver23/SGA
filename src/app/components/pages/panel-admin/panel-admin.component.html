@@ -18,7 +18,7 @@
         </div>
         <div class="formulario">
           <div class="input-forum">
-            <select [(ngModel)]="estudiante.unaPersona.nombre"   formControlName="tipoDocumento" id="tipoDocumento">
+            <!-- <select [(ngModel)]="estudiante.unaPersona.unTipoDocumento.idTipoDocumento"   formControlName="tipoDocumento" id="tipoDocumento"> -->
               <option disabled selected value="">
                 Seleccione tipo documento
               </option>
@@ -28,23 +28,23 @@
               >
                 {{ tipoDocumentos.nombre }}
               </option>
-            </select>
+            <!-- </select> -->
             <input [(ngModel)]="estudiante.unaPersona.numeroDocumento" placeholder="Numero de documento" />
-            <input placeholder="Nombre completo" />
-            <input placeholder="Apellido completo" />
-            <select name="tipoDocumnto" class="tipoDocumento">
+            <input [(ngModel)]="estudiante.unaPersona.nombre" placeholder="Nombre completo" />
+            <input [(ngModel)]="estudiante.unaPersona.apellido"placeholder="Apellido completo" />
+            <select [(ngModel)]="estudiante.grado" name="tipoDocumnto" class="tipoDocumento">
               <option value="">Grado</option>
               <option value="dog">Primero</option>
               <option value="cat">Segundo</option>
               <option value="dog">Tercero</option>
               <option value="cat">Cuarto</option>
             </select>
-            <input placeholder="Director" />
-            <input placeholder="Barrio" />
-            <input type="date" placeholder="Fecha nacimiento" required />
-            <input placeholder="Nombre acudiente" />
-            <input placeholder="Parentesco" />
-            <input placeholder="Telefono/Celular" />
+            <input [(ngModel)]="estudiante.director" placeholder="Director" />
+            <input [(ngModel)]="estudiante.unaPersona.barrio"placeholder="Barrio" />
+            <input [(ngModel)]="estudiante.unaPersona.fechaNacimiento" type="date" placeholder="Fecha nacimiento" required />
+            <input [(ngModel)]="estudiante.nombreAcudiente"placeholder="Nombre acudiente" />
+            <input  placeholder="Parentesco" />
+            <input [(ngModel)]="estudiante.unaPersona.telefono" placeholder="Telefono/Celular" />
             <input type="date" placeholder="Fecha de registro" required />
           </div>
           <div class="option">
@@ -59,7 +59,7 @@
             </div>
             <div>
               <button class="btn limpiar">Limpiar</button
-              ><button class="btn guardar">Guardar</button>
+              ><button (click)="save(estudiante)" class="btn guardar">Guardar</button>
             </div>
           </div>
           <div class="table">
