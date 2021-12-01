@@ -18,17 +18,22 @@
         </div>
         <div class="formulario">
           <div class="input-forum">
-            <!-- <select [(ngModel)]="estudiante.unaPersona.unTipoDocumento.idTipoDocumento"   formControlName="tipoDocumento" id="tipoDocumento"> -->
-            <option disabled selected value="1">
-              Seleccione tipo documento
-            </option>
-            <!-- <option 
+            <select
+              [(ngModel)]="
+                estudiante.unaPersona.unTipoDocumento.idTipoDocumento
+              "
+              id="tipoDocumento"
+            >
+              <option disabled selected value="">
+                Seleccione tipo documento
+              </option>
+              <option
                 *ngFor="let tipoDocumentos of tipoDocumentos"
                 [value]="tipoDocumentos.idTipoDocumento"
               >
                 {{ tipoDocumentos.nombre }}
-              </option> -->
-            <!-- </select> -->
+              </option>
+            </select>
             <input
               [(ngModel)]="estudiante.unaPersona.numeroDocumento"
               placeholder="Numero de documento"
@@ -46,11 +51,11 @@
               name="tipoDocumnto"
               class="tipoDocumento"
             >
-              <option value="">Grado</option>
-              <option value="dog">Primero</option>
-              <option value="cat">Segundo</option>
-              <option value="dog">Tercero</option>
-              <option value="cat">Cuarto</option>
+              <option value="" disabled selected>Grado</option>
+              <option value="Primero">Primero</option>
+              <option value="Segundo">Segundo</option>
+              <option value="Tercero">Tercero</option>
+              <option value="Cuarto">Cuarto</option>
             </select>
             <input [(ngModel)]="estudiante.director" placeholder="Director" />
             <input
@@ -70,7 +75,7 @@
             />
             <input
               [(ngModel)]="estudiante.nombreAcudiente"
-              placeholder="Direccion"
+              placeholder="Nombre acudiente"
             />
             <input placeholder="Parentesco" />
             <input

@@ -31,29 +31,12 @@ export class PanelAdminComponent implements OnInit {
     },
   };
 
-  // };
-
-  // tipoDocumento: "",
-  // numeroDocumento: undefined,
-  // nombreCompleto: "",
-  // apellidoCompleto: "",
-  // grado: "",
-  // fechaNacimiento: "",
-  // fechaRegistro: "",
-  // nombreAcudiente: "",
-  // parentesco: "",
-  // telefono: "",
-  // director: "",
-  // barrio: "",
   fecha: string;
+
   constructor(
     private tipoDocumentoService: TipoDocumentoService,
     private estudianteService: EstudianteService
-  ) {
-    var f = new Date();
-    var _fecha = f.getDate() + '/' + (f.getMonth() + 1) + '/' + f.getFullYear();
-    this.fecha = _fecha;
-  }
+  ) {}
 
   ngAfterViewInit() {}
 
@@ -62,8 +45,10 @@ export class PanelAdminComponent implements OnInit {
   }
 
   save(estudiante: Estudiante) {
+    var f = new Date();
+    var _fecha = f.getDate() + '/' + (f.getMonth() + 1) + '/' + f.getFullYear();
+    this.fecha = _fecha;
     this.estudiante.unaPersona.fechaCreacion = this.fecha;
-    alert(estudiante);
     console.log(estudiante);
     this.estudianteService.saveEstudiantes(estudiante).subscribe(
       (res) => {
