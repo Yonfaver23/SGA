@@ -21,6 +21,7 @@ import { StudentValidateComponent } from './components/pages/student-validate/st
 import { StudentBenefitComponent } from './components/pages/student-benefit/student-benefit.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TablaPersonaComponent } from './components/tabla-persona/tabla-persona.component';
+import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { TablaPersonaComponent } from './components/tabla-persona/tabla-persona.
     MatSliderModule,
     ReactiveFormsModule,
     HttpClientModule,
+    DataTablesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
