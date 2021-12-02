@@ -37,6 +37,7 @@
             <input
               [(ngModel)]="estudiante.unaPersona.numeroDocumento"
               placeholder="Numero de documento"
+              type="number"
             />
             <input
               [(ngModel)]="estudiante.unaPersona.nombre"
@@ -81,6 +82,7 @@
             <input
               [(ngModel)]="estudiante.unaPersona.telefono"
               placeholder="Telefono/Celular"
+              type="number"
             />
           </div>
           <div class="option">
@@ -95,7 +97,10 @@
             </div>
             <div>
               <button class="btn limpiar">Limpiar</button
-              ><button (click)="save(estudiante)" class="btn guardar">
+              ><button
+                (click)="edit ? update : save(estudiante)"
+                class="btn guardar"
+              >
                 Guardar
               </button>
             </div>
