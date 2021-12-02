@@ -1,26 +1,24 @@
-import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
-import { Estudiante } from "src/app/modelo2/persona";
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Estudiante } from 'src/app/modelo2/persona';
 
 @Injectable({
-  providedIn: "root",
+  providedIn: 'root'
 })
-export class EstudianteService {
-  API_URI = "http://localhost:8080";
-
-  constructor(private http: HttpClient) {}
+export class ServiceEstudianteService {
+  constructor(private http:HttpClient) { }
+  url="http://localhost:8080/api/estudiante"
 
   getEstudiantes() {
-    return this.http.get(`${this.API_URI}/api/estudiante`);
+    return this.http.get<Estudiante[]>(this.url);
+  }
+  saveEstudiantes(estudiante:Estudiante){
+    return this.http.post<Estudiante>(this.url,estudiante);
   }
 
-  saveEstudiantes(estudiante: Estudiante) {
-    return this.http.post(`${this.API_URI}/api/estudiante`, estudiante);
-  }
   getEstudiante(id: number) {
-    return this.http.get(`${this.API_URI}/api/estudiante` + id);
+    return this.http.get<Estudiante>(this.url+"/"+id)
   }
-  //  saveUser(user: Users) {
-  //     return this.http.post(`${this.API_URI}/api/estudiante`, user);
-  //   }
+
 }
+  

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EstudianteService } from '../../Servicio/ServiceEstudiante/service-estudiante.service';
+import { ServiceEstudianteService } from '../../Servicio/ServiceEstudiante/service-estudiante.service';
 
 @Component({
   selector: 'app-tabla-persona',
@@ -7,7 +7,7 @@ import { EstudianteService } from '../../Servicio/ServiceEstudiante/service-estu
   styleUrls: ['./tabla-persona.component.css'],
 })
 export class TablaPersonaComponent implements OnInit {
-  constructor(private estudianteService: EstudianteService) {}
+  constructor(private estudianteService: ServiceEstudianteService) {}
 
   ngOnInit(): void {
     this.getTipoDocumento();

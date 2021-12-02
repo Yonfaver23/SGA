@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { EstudianteService } from 'src/app/Servicio/ServiceEstudiante/service-estudiante.service';
-import { TipoDocumentoService } from 'src/app/Servicio/ServiceTipoDocumento/service-tipo-documento.service';
+import { ServiceEstudianteService } from 'src/app/Servicio/ServiceEstudiante/service-estudiante.service';
+import { ServiceTipoDocumentoService } from 'src/app/Servicio/ServiceTipoDocumento/service-tipo-documento.service';
 import { Estudiante } from 'src/app/modelo2/persona';
 
 @Component({
@@ -34,8 +34,8 @@ export class PanelAdminComponent implements OnInit {
   fecha: string;
 
   constructor(
-    private tipoDocumentoService: TipoDocumentoService,
-    private estudianteService: EstudianteService
+    private tipoDocumentoService: ServiceTipoDocumentoService,
+    private estudianteService: ServiceEstudianteService
   ) {}
 
   ngAfterViewInit() {}
